@@ -23,7 +23,7 @@ async function checkURL() {
 
     try {
 
-        const response = await fetch("/analyze-url", {
+        const response = await fetch("/api/analyze-url", {
             method: "POST",
 
             headers: {
@@ -37,10 +37,10 @@ async function checkURL() {
 
         const data = await response.json();
 
-        if (data.error) {
-            result.innerHTML = "❌ " + data.error;
-            return;
-        }
+if (data.error) {
+    result.innerHTML = "❌ " + data.error;
+    return;
+}
 
         let riskClass = "";
 
