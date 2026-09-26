@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SAIF // URL Security System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="scan-lines"></div>
+
+    <header>
+
+        <div class="top-bar">
+            <span>SAIF 2026</span>
+            <span>CYBERSECURITY DIVISION</span>
+            <span class="status">● SYSTEM ONLINE</span>
+        </div>
+
+        <h1>URL SECURITY SYSTEM</h1>
+
+        <p class="subtitle">
+            SECURITY & INNOVATION FAIR 2026
+        </p>
+
+        <div class="line"></div>
+
+    </header>
+
+
+    <main>
+
+        <!-- URL VERIFICATION -->
+
+        <section class="panel">
+
+            <div class="section-title">
+                <span>01</span>
+                URL VERIFICATION
+            </div>
+
+            <p class="description">
+                Enter a URL below to analyze its security status.
+            </p>
+
+            <div class="url-box">
+
+                <input
+                    type="url"
+                    id="urlInput"
+                    placeholder="https://example.com"
+                >
+
+                <button onclick="checkURL()">
+                    SCAN URL
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESULTS -->
+
+        <section class="panel">
+
+            <div class="section-title">
+                <span>02</span>
+                SECURITY ANALYSIS
+            </div>
+
+            <div id="result">
+
+                <div class="waiting">
+                    AWAITING URL INPUT...
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SYSTEM INFORMATION -->
+
+        <section class="panel">
+
+            <div class="section-title">
+                <span>03</span>
+                SYSTEM INFORMATION
+            </div>
+
+            <div class="info-grid">
+
+                <div>
+                    <span class="label">ENGINE</span>
+                    <span>VirusTotal</span>
+                </div>
+
+                <div>
+                    <span class="label">AI ANALYSIS</span>
+                    <span>ENABLED</span>
+                </div>
+
+                <div>
+                    <span class="label">STATUS</span>
+                    <span class="online">OPERATIONAL</span>
+                </div>
+
+                <div>
+                    <span class="label">SYSTEM</span>
+                    <span>SAIF URL CHECKER</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="line"></div>
+
+        <p>
+            SAIF 2026 // URL SECURITY SYSTEM
+        </p>
+
+        <p class="footer-small">&copy;
+            SECURITY & INNOVATION FAIR • CYBERSECURITY PROJECT // MADE BY MUHAMMAD, ARNAV, MAYUKH, AND ______
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
